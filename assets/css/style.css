@@ -98,7 +98,7 @@ ul#menu {
     justify-content: space-evenly;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 3vw;
-    font-weight: lighter;
+    font-weight:300;
     color:#000;
     padding-bottom: 20px;
     margin: 0;
@@ -488,6 +488,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: 0 0 6px #000;
     transition: 380ms;
+    z-index: 200;
 }
 .icone {
     width: 35px;
