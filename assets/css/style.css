@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@800&display=swap');
+h1 {
+    font-family: 'Open Sans', bold;
+    color: #fff;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 1rem;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+}
+h6 {
+    text-align: center;
+    color: #393945;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.txtBio h3 {
+    padding-top: 2vw;
+    font-weight: bold;
+    font-size: 5vw;
+    color: #F6A844;
+
+}
+#contact h3 {
+    padding-top: 2vw;
+    padding-left: 8vw;
+    font-weight: bold;
+    font-size: 5vw;
+    color: #D1897B;
+}
+a {
+    font-size: 40px;
+    color: #fff;
+}
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+.credit {
+    display: flex;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 11px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-right: 3vw;
+}
+/* -------------------------------------------------
+Hover des images, permet d'afficher le contenu 
+------------------------------------------------- */
+#portraits img {
+    transition: 340ms;
+    opacity: 80%;
+}
+#portraits img:hover {
+    cursor:pointer;
+    opacity: 100%;
+}
+/*----- Landscapes -----*/
+#landscapes img {
+    transition: 340ms;
+    opacity: 80%;
+}
+#landscapes img:hover {
+    cursor:pointer;
+    opacity: 100%;
+}
+/* -------------------------------------------------
+Header 
+------------------------------------------------- */
+header {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F6A844;
+/*    background-image: url("../img/imagesphoto.png");
+    background-position: 62% 0%;
+    background-repeat: no-repeat;
+    background-size: 20%;   */
+}
+.tete {
+    padding-top: 3px;
+}
+/* -------------------------------------------------
+Menu 
+------------------------------------------------- */
+ul#menu {
+    padding: 0;
+    padding-bottom: 10px;
+}
+#menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3vw;
+    font-weight: lighter;
+    color:#000;
+    padding-bottom: 20px;
+    margin: 0;
+}
+@media screen and (max-width: 800px) {
+    a {
+        font-size: 20px;
+    }
+}
+a:hover {
+    transition: 300ms;
+    color: #3D858E;
+}
+li {
+    list-style-type: none;
+}
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+/* -------------------------------------------------
+Grille Portraits 
+------------------------------------------------- */
+#portraits {
+    box-shadow: inset 0px 20px 10px -10px rgb(167, 97, 5);
+    background-color: #F6A844;
+    padding-bottom: 100px;
+    align-content: start;
+    justify-content: center;
+}
+.gridPortraits {
+    display: grid;
+    width: 100%;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 1fr 0.5fr repeat(3, 1fr) 0.5fr repeat(3, 1fr) 0.5fr;
+    justify-content: center;
+    grid-template-areas:
+    "A A A"
+    "A A A"
+    "B C C"
+    "B D D"
+    "E E E"
+    "E E E"
+    "F F G"
+    "H H G"
+    "I I I"
+    "I I I";
+    margin: 0;
+    padding: 0px 0px 100px 0px;
+}
+.portraitHeader {
+    position: sticky;
+    top: 0px;
+    bottom: -100px;
+    justify-self: center;
+    font-size: 15vw;
+}
+.portrait1 {
+    grid-area:A;
+    position: relative;
+}
+.portrait2 {
+    grid-area:B;
+    position: relative;
+}
+.portrait3 {
+    grid-area:C;
+    position: relative;
+}
+.portrait4 {
+    grid-area:D;
+    position: relative;
+}
+.portrait5 {
+    grid-area:E;
+    position: relative;
+}
+.portrait6 {
+    grid-area:F;
+    position: relative;
+}
+.portrait7 {
+    grid-area:G;
+    position: relative;
+}
+.portrait8 {
+    grid-area:H;
+    position: relative;
+}
+.portrait9 {
+    grid-area:I;
+    position: relative;
+}
+/* -------------------------------------------------
+Grille Landscapes 
+------------------------------------------------- */
+#landscapes {
+    box-shadow: inset 0px 20px 10px -10px #185861;
+    background-color: #3D858E;
+    padding-bottom: 100px;
+    align-content: start;
+    justify-content: center;
+}
+.gridLandscape {
+    display: grid;
+    width: 100%;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 1fr 0.5fr repeat(3, 1fr) 0.5fr repeat(3, 1fr) 0.5fr;
+    justify-content: center;
+    grid-template-areas:
+    "J J J"
+    "J J J"
+    "K K L"
+    "M M L"
+    "N N N"
+    "N N N"
+    "O P P"
+    "O Q Q"
+    "R R R"
+    "R R R";
+    margin: 0;
+    padding: 0px 0px 100px 0px;
+}
+.landscapeHeader {
+    position: sticky;
+    top: 0px;
+    bottom: -100px;
+    justify-self: center;
+    font-size: 15vw;
+    z-index: 10;
+}
+.landscape1 {
+    grid-area: J;
+    z-index: 100;
+}
+.landscape2 {
+    grid-area: K;
+    z-index: 100;
+}
+.landscape3 {
+    grid-area: L;
+    z-index: 100;
+}
+.landscape4 {
+    grid-area: M;
+    z-index: 100;
+}
+.landscape5 {
+    grid-area: N;
+    z-index: 100;
+}
+.landscape6 {
+    grid-area: O;
+    z-index: 100;
+}
+.landscape7 {
+    grid-area: P;
+    z-index: 100;
+}
+.landscape8 {
+    grid-area: Q;
+    z-index: 100;
+}
+.landscape9 {
+    grid-area: R;
+    z-index: 1;
+}
+.landscape9:hover {
+    grid-area: R;
+    z-index: 100;
+}
+/* -------------------------------------------------
+Partie Biographie 
+------------------------------------------------- */
+#biographie {
+    background-color: #D1897B;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 20px 10px -10px #9c5546;
+}
+.txtBio {
+    min-width: 50%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.imgBio {
+    align-items: flex-end;
+    margin: 2%;
+    max-width: 24vw;
+}   
+.underlined {
+    text-decoration: underline;
+}
+/* -------------------------------------------------
+Partie Contact 
+------------------------------------------------- */
+#contact {
+    background-color: #393945;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0px 20px 10px -10px #25252c;
+    font-size: 16px;
+}
+.corp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0;
+    margin-top: 0;
+}
+.corp p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+}
+.resSociaux {
+    display: flex;
+    justify-content: space-between;
+}
+.fab {
+    font-size: 20px;
+    color: #fff;
+    font-size: 2.5em;
+    transition: 300ms;
+}
+.fa-instagram-square:hover {
+    color: #D1897B;
+    cursor: pointer;
+}
+.fa-facebook-square:hover {
+    color: #3D858E;
+    cursor: pointer;
+}
+.fa-dribbble-square:hover {
+    color: #F6A844;
+    cursor: pointer;
+}
+#contact h4 {
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------
+Formulaire 
+------------------------------------------------- */
+.formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-left: 100px;
+}
+.formPart1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.formPart2 {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;   
+}
+label {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 12px;
+}
+.formPart2 label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 13px;
+}
+.formPart1 input {
+    background-color: #D1897B;
+    border: none;
+    width: 15vw;
+    padding: 20px 20px;
+    margin: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color:#000;
+}
+.formPart2 input {
+    background-color: #000;
+    color: #D1897B;
+    border: 5px  white;
+    width: 100%;
+    padding: 8px 20px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.formPart2 input:hover {
+    color: #fff;
+}
+select {
+    background-color: #D1897B;
+    width: 15.5vw;
+    padding: 15px 20px;
+}
+textarea {
+    resize: none;
+    background-color: #D1897B;
+    height: 5vw;
+    width: 15vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+option {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* -------------------------------------------------
+Footer 
+------------------------------------------------- */
+.foot {
+    background-color: #000;
+    justify-content: space-around;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    color:#fff;
+}
+.links {
+    transition: 300ms;
+    padding: 5px 18px;
+}
+.links:hover {
+    color:#D1897B;
+    cursor: pointer;
+}
+
+
+#whatever {
+    padding: 20px 20px;
+    background-color: #3D858E;
+    text-align: center;
+    color: #fff;
+}
+#whatever input {
+    width: 50vw;
+}
+#whatever label {
+    padding-right: 15px;
+}
+button {
+    background-color: #393945 !important;
+    border-style: none !important;
+}
+button:hover {
+    background-color: #7c7c7c !important;
+;}
+.buttn {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background-color: #D1897B;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #000;
+    transition: 380ms;
+}
+.icone {
+    width: 35px;
+}
+.buttn:hover {
+    transform: rotate(360deg);
+}
+.buttn:hover {
+    background-color: #fff;
+}
+.buttn:hover .icone {
+    fill: crimson;
+}

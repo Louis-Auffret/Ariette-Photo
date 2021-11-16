@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariette Photo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<main>
+    <header>
+        <div class="tete">
+            <h1>Ariette Photo</h1>
+            <h6 id="myName"></h6>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#portraits" style="text-decoration:none">Portraits</a></li>
+                <li><a href="#landscapes" style="text-decoration:none">Landscapes</a></li>
+                <li><a href="#biographie" style="text-decoration:none">Biographie</a></li>
+                <li><a href="#contact" style="text-decoration:none">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="container-fluid" id="whatever">
+            <p class="justify-content-center">Le site n’est pas tout à fait terminé ! Pour être informé de son ouverture officielle, n’hésites pas à laisser ton mail.</p>
+            <form action="#" method="POST">
+                <label for="yourMail">Votre Email :</label>
+                <input type="email" class="form-control my-2" id="yourMail" name="yourMail" placeholder="Veuillez entrez votre email">
+                <button type="button" class="btn btn-primary" id="myButton">Envoyer</button>
+            </form>
+        </div>
+        <div id="landscapes">
+            <h2 class="landscapeHeader">LANDSCAPE</h2>
+            <div class="gridLandscape">
+                <img src="assets/img/landscapes/landscape1.jpg"
+                 class="landscape1">
+                <img src="assets/img/landscapes/landscape2.jpg"
+                 class="landscape2">
+                <img src="assets/img/landscapes/landscape3.jpg"
+                 class="landscape3">
+                <img src="assets/img/landscapes/landscape4.jpg"
+                 class="landscape4">
+                <img src="assets/img/landscapes/landscape5.jpg"
+                 class="landscape5">
+                <img src="assets/img/landscapes/landscape6.jpg"
+                 class="landscape6">
+                <img src="assets/img/landscapes/landscape7.jpg"
+                 class="landscape7">
+                <img src="assets/img/landscapes/landscape8.jpg"
+                 class="landscape8">
+                <img src="assets/img/landscapes/landscape9.jpg"
+                 class="landscape9">
+            </div>
+            <p class="credit">Toutes les photos sont la propriété d'Ariette DESCHAMPS ©</p>
+        </div>
+<!-- ICI YA UN PROBLEME -->
+        <section id="portraits">
+            <h2 class="portraitHeader">PORTRAITS</h2>
+            <div class="gridPortraits">
+                <img src="assets/img/portraits/portrait1.jpg"
+                class="portrait1">
+                <img src="assets/img/portraits/portrait2.jpg"
+                class="portrait2">
+                <img src="assets/img/portraits/portrait3.jpg"
+                class="portrait3">
+                <img src="assets/img/portraits/portrait4.jpg"
+                class="portrait4">
+                <img src="assets/img/portraits/portrait5.jpg"
+                class="portrait5">
+                <img src="assets/img/portraits/portrait6.jpg"
+                class="portrait6">
+                <img src="assets/img/portraits/portrait7.jpg"
+                class="portrait7">
+                <img src="assets/img/portraits/portrait8.jpg"
+                class="portrait8">
+                <img src="assets/img/portraits/portrait9.jpg"
+                class="portrait9">
+            </div>
+            <p class="credit">Toutes les photos sont la propriété d'Ariette DESCHAMPS ©</p>
+        </section>
+        <section id="biographie">
+            <div class="txtBio">
+                <h3>Biographie</h3>
+                <p>Je m’appelle Ariette DESCHAMPS, je suis photographe professionnelle depuis 2016. Je vis et travaille en France, mais c'est en Belgique que j'ai appris la photo. Je pense que c'est aussi pour cela que je suis aussi attachée aux jeux de lumières, très présents dans les villes Belges. Comme présenté plus haut, mes sujets de prédilections sont les portraits et les paysages. Je suis passionnée par la lumière et ses effets optiques sublimes qui font la beauté des photos de paysage.<br><br><span class="underlined">N’hésitez pas à me contacter pour des commandes :</span> portraits en studio ou en extérieur / Et photos de paysages par thématique.</p>
+            </div>
+            <img src="assets/img/photographer.jpg"
+             class="imgBio">
+        </section>
+    </body>
+    <footer>
+        <section id="contact">
+            <h3>Contact</h3>
+            <div class="corp">
+                <div class="num1">
+                    <h4>Téléphone :</h4>
+                    <p>06.62.33.79.92</p>
+                </div>
+                <div class="num2">
+                    <h4>Mail :</h4>
+                    <p>Ariette.photographie@gmail.com</p>
+                </div>
+                <div class="num3">
+                    <h4>Mes Réseaux Sociaux :</h4>
+                    <div class="resSociaux">
+                        <p><i class="fab fa-instagram-square"></i></p>
+                        <p><i class="fab fa-facebook-square"></i></p>
+                        <p><i class="fab fa-dribbble-square"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="foot">
+            <h4 class="links">Mentions léglales</h4>
+            <h4 class="links">CGU</h4>
+            <h4 class="links">Politique de confidentialité</h4>
+            <h4 class="links">Remerciements</h4>
+        </section>
+        <div class="buttn">
+            <img src="assets/img/arrow-up-solid.svg" class="icone">
+        </div>
+    </footer>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="assets/js/header.js"></script>
+</main>
+</html>
